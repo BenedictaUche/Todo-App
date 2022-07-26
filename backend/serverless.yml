@@ -1,5 +1,5 @@
 # TODO: Change the name of the org 
-# org: serverless
+org: benedicta
 app: serverless-todo-app
 service: serverless-todo-app
 
@@ -262,15 +262,7 @@ resources:
     # Add necessary AWS resources. You will need at least the following AWS resources
     # TODO: Fill the properties
     # Feel free to change the names as you like. 
-
-    RequestBodyValidator:
-      Type: AWS::ApiGateway::RequestValidator
-      Properties:
-        Name: 'request-body-validator'
-        RestApiId:
-          Ref: ApiGatewayRestApi
-        ValidateRequestBody: true
-        ValidateRequestParameters: false
+    
 
     GatewayResponseDefault4XX:
       Type: AWS::ApiGateway::GatewayResponse
