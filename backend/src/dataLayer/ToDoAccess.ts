@@ -18,12 +18,12 @@ export class ToDoAccess {
 
         const params = {
             TableName: this.todoTable,
-            KeyConditionExpression: "#userId = :userId",
+            KeyConditionExpression: '#userId = :userId',
             ExpressionAttributeNames: {
-                "#userId": "userId"
+                '#userId': 'userId'
             },
             ExpressionAttributeValues: {
-                ":userId": userId
+                ':userId': userId
             }
         };
 

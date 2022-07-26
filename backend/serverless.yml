@@ -6,6 +6,8 @@ service: serverless-todo-app
 plugins:
   - serverless-webpack
   - serverless-iam-roles-per-function
+  - serverless-aws-documentation 
+  - serverless-reqvalidator-plugin
   - serverless-plugin-tracing
 
 provider:
