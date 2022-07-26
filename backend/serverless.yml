@@ -228,6 +228,7 @@ resources:
           Ref: ApiGatewayRestApi
         ValidateRequestBody: true
         ValidateRequestParameters: false
+        
     RequestBodyValidator:
       Type: AWS::ApiGateway::RequestValidator
       Properties:
@@ -236,6 +237,7 @@ resources:
           Ref: ApiGatewayRestApi
         ValidateRequestBody: true
         ValidateRequestParameters: false
+      
     AttachmentsBucket:
       Type: AWS::S3::Bucket
       Properties:
@@ -270,8 +272,8 @@ resources:
     # Add necessary AWS resources. You will need at least the following AWS resources
     # TODO: Fill the properties
     # Feel free to change the names as you like. 
-    
 
+        
     GatewayResponseDefault4XX:
       Type: AWS::ApiGateway::GatewayResponse
       Properties:
